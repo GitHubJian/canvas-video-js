@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Canvas Video Player</title>
+  </head>
+  <body>
+    <video id="video">
+      <source
+        src="http://resource.yaokan.sogoucdn.com/videodown/5e9f/756/7d568f45025dcdb2a860777b4cbec9aa.mp4"
+      />
+    </video>
+
+    <canvas id="canvas" style="height: 100%; width: 100%;"></canvas>
+
+    <script src="./js/CVP.js"></script>
+
+    <script>
+      var cvp = new CanvasVideoPlayer({
+        videoSelector: '#video',
+        canvasSelector: '#canvas'
+      })
+
+      cvp.play()
+    </script>
+  </body>
+</html>

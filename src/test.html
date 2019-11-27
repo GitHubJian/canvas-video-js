@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <video id="video" style="display: none">
+      <source
+        src="http://resource.yaokan.sogoucdn.com/videodown/5e9f/756/7d568f45025dcdb2a860777b4cbec9aa.mp4"
+      />
+    </video>
+    <button id="btn">Click Me</button>
+
+    <script>
+      var video = document.getElementById('video')
+
+      var btn = document.getElementById('btn')
+
+      btn.onclick = function() {
+        video.play()
+      }
+    </script>
+  </body>
+</html>
